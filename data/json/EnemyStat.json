@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "enemies": [
+    {
+      "id": "forest_bandit_rank1",
+      "name": "Forest Bandit",
+      "rank": 1,
+      "base_stats": {
+        "STR": 12,
+        "INT": 6,
+        "DEX": 14,
+        "VIT": 10
+      },
+      "skills": ["quick_slash", "nerve_strike"],
+      "passive_effects": ["keen_reflex"],
+      "ai_pattern": ["quick_slash", "nerve_strike", "recover_ki"],
+      "reward": {
+        "gold": 20,
+        "exp": 20
+      }
+    },
+    {
+      "id": "sect_disciple_rank2",
+      "name": "Sect Disciple",
+      "rank": 2,
+      "base_stats": {
+        "STR": 20,
+        "INT": 18,
+        "DEX": 16,
+        "VIT": 18
+      },
+      "skills": ["spirit_burst", "poison_mist"],
+      "passive_effects": ["flow_channel", "body_temper"],
+      "ai_pattern": ["spirit_burst", "poison_mist", "recover_ki"],
+      "reward": {
+        "gold": 55,
+        "exp": 40
+      }
+    },
+    {
+      "id": "inner_guard_rank3",
+      "name": "Inner Court Guard",
+      "rank": 3,
+      "base_stats": {
+        "STR": 30,
+        "INT": 24,
+        "DEX": 22,
+        "VIT": 28
+      },
+      "skills": ["iron_palm", "spirit_burst", "recover_ki"],
+      "passive_effects": ["steady_core", "dragon_bloodline"],
+      "ai_pattern": ["iron_palm", "spirit_burst", "recover_ki"],
+      "reward": {
+        "gold": 110,
+        "exp": 60
+      }
+    }
+  ]
+}

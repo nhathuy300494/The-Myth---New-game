@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "exp_curve": {
+    "base": 20,
+    "rarity_multiplier": {
+      "Common": 1.0,
+      "Good": 1.5,
+      "Rare": 2.0,
+      "Legendary": 3.0
+    },
+    "formula": "Exp to next level = base * (level^2) * rarity_multiplier"
+  },
+  "passives": [
+    {
+      "id": "keen_reflex",
+      "name": "Keen Reflex",
+      "rarity": "Common",
+      "max_level": 3,
+      "stat_bonus": {"STR": 0, "INT": 0, "DEX": 6, "VIT": 0},
+      "active_effect": "",
+      "description": "Increase agility focus for dodge scaling through DEX conversion."
+    },
+    {
+      "id": "body_temper",
+      "name": "Body Temper",
+      "rarity": "Common",
+      "max_level": 3,
+      "stat_bonus": {"STR": 2, "INT": 0, "DEX": 0, "VIT": 6},
+      "active_effect": "",
+      "description": "Basic body refinement to improve HP conversion from VIT."
+    },
+    {
+      "id": "flow_channel",
+      "name": "Flow Channel",
+      "rarity": "Good",
+      "max_level": 5,
+      "stat_bonus": {"STR": 2, "INT": 4, "DEX": 2, "VIT": 4},
+      "active_effect": "ki_regen_bonus_small",
+      "description": "Improve meridian flow for balanced offense and Ki sustain."
+    },
+    {
+      "id": "mind_focus",
+      "name": "Mind Focus",
+      "rarity": "Good",
+      "max_level": 5,
+      "stat_bonus": {"STR": 0, "INT": 8, "DEX": 2, "VIT": 2},
+      "active_effect": "spell_amplify_small",
+      "description": "Meditative discipline to increase spell scaling through INT."
+    },
+    {
+      "id": "steady_core",
+      "name": "Steady Core",
+      "rarity": "Rare",
+      "max_level": 7,
+      "stat_bonus": {"STR": 4, "INT": 4, "DEX": 2, "VIT": 8},
+      "active_effect": "ki_regen_bonus",
+      "description": "Strengthen core circulation for higher Ki sustain in long combat."
+    },
+    {
+      "id": "dragon_bloodline",
+      "name": "Dragon Bloodline",
+      "rarity": "Legendary",
+      "max_level": 9,
+      "stat_bonus": {"STR": 10, "INT": 10, "DEX": 8, "VIT": 14},
+      "active_effect": "legendary_all_stat_boost",
+      "description": "Ancient bloodline resonance with high-end all stat enhancement."
+    }
+  ]
+}
