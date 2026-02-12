@@ -58,7 +58,7 @@ Engine: Godot 4.5.x
 
 ## **3.2 Autoload Singletons**
 
-Bắt buộc:
+Bắt buộc: Autoload Singletons name không được trùng với class_name sẽ gây lỗi.
 
 * GameManager
 
@@ -380,4 +380,3 @@ Nếu cần thêm tính năng:
 * Tạo extension layer
 
 * Không sửa formula gốc
-
