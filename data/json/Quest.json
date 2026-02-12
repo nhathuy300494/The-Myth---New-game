@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "quests": [
+    {
+      "id": "main_001_awaken",
+      "name": "Awakened Meridian",
+      "type": "main",
+      "objectives": [
+        "Talk to Elder Lin",
+        "Complete one cultivation session",
+        "Defeat 1 bandit_scout"
+      ],
+      "time_limit": 0,
+      "rewards": {
+        "gold": 120,
+        "exp": 80,
+        "items": ["pill_green"]
+      },
+      "branching_flags": ["met_elder_lin", "meridian_opened"]
+    },
+    {
+      "id": "side_010_supply_run",
+      "name": "Supply Run",
+      "type": "side",
+      "objectives": [
+        "Collect 3 spirit_herb",
+        "Return to Quartermaster"
+      ],
+      "time_limit": 7,
+      "rewards": {
+        "gold": 60,
+        "exp": 40,
+        "items": ["pill_white"]
+      },
+      "branching_flags": ["supply_route_safe"]
+    }
+  ]
+}

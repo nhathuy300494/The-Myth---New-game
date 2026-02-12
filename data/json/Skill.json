@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "damage_pipeline_reference": [
+    "raw",
+    "ki_layer",
+    "def_reduction",
+    "net_damage",
+    "dodge_roll",
+    "apply_hp"
+  ],
+  "skills": [
+    {
+      "id": "quick_slash",
+      "name": "Quick Slash",
+      "type": "Physical",
+      "resource_cost": {"mp": 0, "ki": 8},
+      "status_effect": "",
+      "effect_value": 14,
+      "description": "Physical hit processed by standard damage pipeline."
+    },
+    {
+      "id": "spirit_burst",
+      "name": "Spirit Burst",
+      "type": "Spell",
+      "resource_cost": {"mp": 12, "ki": 6},
+      "status_effect": "burn",
+      "effect_value": 20,
+      "description": "Spell hit, direct damage follows Ki -> DEF -> Dodge order."
+    },
+    {
+      "id": "poison_mist",
+      "name": "Poison Mist",
+      "type": "Spell",
+      "resource_cost": {"mp": 10, "ki": 4},
+      "status_effect": "poison",
+      "effect_value": 6,
+      "description": "Status-oriented skill applying poison DOT; DOT ticks ignore dodge."
+    },
+    {
+      "id": "recover_ki",
+      "name": "Recover Ki",
+      "type": "Spell",
+      "resource_cost": {"mp": 5, "ki": 0},
+      "status_effect": "ki_recovery",
+      "effect_value": 18,
+      "description": "Recovery action used by AI when MP/Ki is insufficient."
+    },
+    {
+      "id": "iron_palm",
+      "name": "Iron Palm",
+      "type": "Physical",
+      "resource_cost": {"mp": 0, "ki": 15},
+      "status_effect": "",
+      "effect_value": 26,
+      "description": "Heavy physical attack with high raw contribution before reductions."
+    },
+    {
+      "id": "nerve_strike",
+      "name": "Nerve Strike",
+      "type": "Physical",
+      "resource_cost": {"mp": 0, "ki": 10},
+      "status_effect": "slow",
+      "effect_value": 12,
+      "description": "Physical strike with control status to reduce target speed."
+    }
+  ]
+}
