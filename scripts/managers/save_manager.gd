@@ -1,5 +1,5 @@
 extends Node
-class_name SaveManager
+class_name SaveManagerNode
 
 # Initialize SaveManager when added to scene tree.
 func _ready() -> void:

@@ -248,7 +248,6 @@ func _has_required_keys(dict_value: Dictionary, keys: Array[String]) -> bool:
 		if not dict_value.has(key_name):
 			return false
 	return true
-class_name DataManager
 
 # Initialize DataManager when added to scene tree.
 func _ready() -> void:
